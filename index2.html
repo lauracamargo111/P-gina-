@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/757a4da688.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@900&family=David+Libre&family=Kaisei+Opti&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&family=Lobster&display=swap" rel="stylesheet">
+<style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        float:right
+        
+    }
+    
+    li {
+        float: left;
+    }
+    
+    li a {
+        display: block;
+        color: #07373E;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+  
+    
+    .active {
+        background-color:#ced0d1;
+    }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="index.html">Inicio</a></li>
+        <li><a href="" >Portafolio</a></li>
+        <li><a href="index3.html">Sobre mí</a></li>
+        <li><a href="index4.html">Contacto</a></li>
+        
+       
+      </ul>
+      <div class="contenedor">
+		<header>
+			<div class="logo">
+				<h1>Portafolio</h1>
+				<p>Laura Camargo</p>
+			</div>
+			
+			<div class="categorias" id="categorias">
+				<a href="#" class="activo">Todos</a>
+				<a href="#">Logotipos</a>
+                <a href="#">fotografías</a>
+				<a href="#">Ilustraciones</a>
+
+			</div>
+		</header>
+
+		<section class="grid" id="grid">
+            <div class="item" 
+                     data-categoria="fotografías"
+                     data-etiquetas="ciudades autos carros calles"
+                     data-descripcion="1.- Lorem ipsum dolor sit amet consectetur."
+                >
+                    <div class="item-contenido">
+                        <img src="IMAGE/Fotografias1.png" alt="">
+                    </div>
+                </div>
+    
+                <div class="item"
+                     data-categoria="fotografías"
+                     data-etiquetas="personas mujeres"
+                     data-descripcion="2.- Lorem ipsum dolor sit amet consectetur."
+                >
+                    <div class="item-contenido">
+                        <img src="IMAGE/Fotografías2.png" alt="">
+                    </div>
+                </div>
+    
+                <div class="item"
+                     data-categoria="fotografías"
+                     data-etiquetas="paisajes montañas mar playas"
+                     data-descripcion="3.- Lorem ipsum dolor sit amet consectetur."
+                >
+                    <div class="item-contenido">
+                        <img src="IMAGE/Fotografías3.png" alt="">
+                    </div>
+                </div>
+			<div class="item"
+				 data-categoria="ilustraciones"
+				 data-etiquetas="ilustraciones logo"
+				 data-descripcion="4.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="IMAGE/ilustraciones1.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="ilustraciones"
+				 data-etiquetas="ilustraciones logos"
+				 data-descripcion="5.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+                    <img src="IMAGE/ilustraciones2.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="ilustraciones"
+				 data-etiquetas="ilustraciones logo"
+				 data-descripcion="6.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="IMAGE/ilustraciones3.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="ilustraciones"
+				 data-etiquetas="ilustraciones logo"
+				 data-descripcion="7.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="IMAGE/ilustraciones4.png" alt="">
+				</div>
+			</div>
+
+			<div class="item" 
+				 data-categoria="logotipos"
+				 data-etiquetas="logotipos "
+				 data-descripcion="8.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="IMAGE/logotipo1.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="logotipos"
+				 data-etiquetas="logotipos"
+				 data-descripcion="9.- Lorem ipsum dolor sit amet consectetur.
+				 	"
+			>
+				<div class="item-contenido">
+					<img src="IMAGE/logotipo2.png" alt="">
+				</div>
+			</div>
+		</section>
+
+		<section class="overlay " id="overlay">
+			<div class="contenedor-img">
+				<button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+				<img src="" alt="">
+			</div>
+			<p class="descripcion"></p>
+		</section>
+
+		<footer class="contenedor">
+			<div class="redes-sociales">
+				<div class="contenedor-icono">
+					<a href="https://www.behance.net/laurav2203224" target="_blank" class=".behance">
+						<i class="fab fa-behance"></i>
+					</a>
+				</div>
+				
+				<div class="contenedor-icono">
+					<a href="http://www.instagram.com" target="_blank" class="instagram">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</div>
+			</div>
+			<div class="creado-por">
+				<p>Sitio diseñado por <a href="#">Laura Camargo</a> </p>
+			</div>
+		</footer>
+	</div>
+
+	<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+	<script src="script.js"></script>
+      
+        
+
+
+</body>
+
+</html>
